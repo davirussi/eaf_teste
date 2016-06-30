@@ -1,0 +1,34 @@
+Escreva um método de classe em PHP para validar os dados de login de um usuário (email e senha) que são recebidos por parâmetro. Os dados para validação estão em um banco
+ MySQL, na tabela ‘login’ que possui os campos ‘email’ e ‘senha’.
+Obs: Considere que o acesso ao banco já foi aberto e está na variável global chamada $db. Podem ser usados o método de acesso a banco via PDO.
+
+
+
+Considerando as seguintes tabelas:
+    pedido, com os campos
+        ‘id’
+        ‘data’
+
+    pedido_item, com os campos
+        ‘pedido_id’
+        ‘item_id’
+        ‘quantidade’
+
+    item, com os campos
+        ‘id’
+        ‘nome’
+Escreva uma query para retornar a quantidade de cada item comprado no mês de julho de 2015 por ordem do mais comprado.
+
+
+
+
+Temos uma DIV específica com diversos outros elementos dentro dela. Como você faria para que apenas os SPANs dentro dessa DIV sumam se passarmos o mouse por cima deles 
+e reapareçam se retirarmos o mouse? 
+Obs: Esses elementos devem sumir e aparecer com efeitos de transição de 3 segundos e devem se manter na mesma posição.
+
+SPOILER JQuery
+
+Considerando que temos uma página HTML com um formulário. Queremos fazer o tratamento do formulário via AJAX, (digamos envio de email, inserção em banco de dados
+ e mensagem de obrigado ou erro) sem que a página seja recarregada. Quais são os arquivos necessários e qual o papel de cada arquivo para que isso ocorra?
+ 
+ 

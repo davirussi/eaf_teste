@@ -1,0 +1,24 @@
+Considerando as seguintes tabelas:
+    pedido, com os campos
+        ‘id’
+        ‘data’
+
+    pedido_item, com os campos
+        ‘pedido_id’
+        ‘item_id’
+        ‘quantidade’
+
+    item, com os campos
+        ‘id’
+        ‘nome’
+Escreva uma query para retornar a quantidade de cada item comprado no mês de julho de 2015 por ordem do mais comprado.
+
+SELECT pi.item_id, i.nome, SUM(pi.quantidade) as quantidades
+FROM `pedido_item` as pi
+INNER JOIN item as i
+ON i.id = pi.item_id
+INNER JOIN pedido as p
+ON  p.id = pi.pedido_id
+WHERE YEAR(p.data) = "2015" and MONTH(p.data) = "7"
+GROUP BY pi.item_id 
+ORDER BY quantidades DESC
